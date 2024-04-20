@@ -29,10 +29,11 @@
 	2. 然后更新`pod repo update`
 	3. `pod update PPCatalystTool --no-repo-update`
 
-# 使用(主要就是bundle文件和封装的类)
+# 三个使用方法(主要就是bundle文件和封装的类)
 1. 推荐使用pods
     `pod 'PPCatalystTool'`
 2. 将`PPCatalystTool`和`PPCatalystPlugin`目录下的`Products`里面的`xcframework`和`bundle`都拖到项目中
 3. 将`bundle`和`PPCatalystTool`中的`PPCatalystHandle`类拖到项目中
 
 > 具体使用参照`Example`代码
+> 需要注意测试时输入的路径要写完整, 不要写 "~/Desktop"这种, 最好是"/Users/garenge/Desktop"

@@ -21,12 +21,16 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
 
-    NSURL *fileUrl = [[PPCatalystHandle sharedPPCatalystHandle] selectSingleFileWithFolderPath:@""];
-    NSString *filePath = fileUrl.absoluteString;
+//    NSURL *fileUrl = [[PPCatalystHandle sharedPPCatalystHandle] selectSingleFileWithFolderPath:@""];
+//    NSLog(@"我已选择文件路径：%@", fileUrl.absoluteString);
+//
+//    NSString *folderPath = [[PPCatalystHandle sharedPPCatalystHandle] selectFolderWithPath:@""].absoluteString;
+//
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+//        [[PPCatalystHandle sharedPPCatalystHandle] openFileOrDirWithPath:folderPath];
+//    });
 
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [[PPCatalystHandle sharedPPCatalystHandle] openFileOrDirWithPath:filePath];
-    });
+    [[PPCatalystHandle sharedPPCatalystHandle] openFileOrDirWithPath:@"/Users/garenge/Desktop/arc"];
 }
 
 

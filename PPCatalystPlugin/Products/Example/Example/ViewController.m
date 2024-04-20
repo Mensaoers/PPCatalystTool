@@ -47,7 +47,7 @@
 
     NSString *path = @"/Users/garenge/Desktop";
 //    [self selectFolderWithPath:path];
-    [self openFileOrDirWithPath:@"~/Desktop"];
+    [self openFileOrDirWithPath:@"/Users/garenge/Desktop/arc/"];
 #endif
 }
 
